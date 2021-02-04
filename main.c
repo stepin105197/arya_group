@@ -6,5 +6,6 @@ int main()
     Pranitha();
     Fayaz();
     Karti();
+    Gagana();
     return 0;
 }

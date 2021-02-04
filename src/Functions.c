@@ -20,3 +20,6 @@ void Karti(){
     printf("Hi, I'm Karti!");
 }
 
+void Gagana(){
+    printf("Hi, I'm Gagana!");
+}
