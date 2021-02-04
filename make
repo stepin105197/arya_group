@@ -6,7 +6,7 @@ BUILD = build
 
 # All source code files
 SRC = project_main.c\
-src/tic_tac_toe_functions.c\
+src/Functions.c\
 
 
 
