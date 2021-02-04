@@ -15,3 +15,8 @@ void Fayaz()
 {
     printf("Iam Fayaz");
 }
+
+void Karti(){
+    printf("Hi, I'm Karti!");
+}
+
