@@ -5,3 +5,9 @@
     printf("I am Anagha");
 
 }
+
+void Pranitha()
+{
+    printf("This is Pranitha");
+}
+
