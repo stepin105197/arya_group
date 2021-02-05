@@ -1,39 +1,27 @@
-# Name of the project
-PROJECT_NAME = Hello 
+all: run clean
 
-# Output directory
+
 BUILD = build
 
-# All source code files
-SRC = functions.c\
-src/main.c\
 
-# Project Output name
-#PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME)
+SRC = main.c\
+src/functions.c\
 
 
-# Default target built
-$(PROJECT_NAME):all
-
-# Run the target even if the matching name exists
-.PHONY: run clean test doc all
-
-all: $(SRC) $(BUILD)
-	gcc $(SRC) -o $(BUILD)/Hello.out
-
-# Call `make run` to run the application
-run:$(PROJECT_NAME)
-	./$(BUILD)/Hello.out
-
-# Document the code using Doxygen
-doc:
-	make -C ./documentation
-
-
-# Remove all the built files, invoke by `make clean`
-clean:
-	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
-
-# Create new build folder if not present
 $(BUILD):
 	mkdir build
+
+INC = -Iinc
+
+PROJECT_NAME = hello.out
+
+
+$(PROJECT_NAME): $(SRC)
+	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
+
+
+run: $(PROJECT_NAME)
+	$(PROJECT_NAME)
+
+clean: 
+	rm -rf $(PROJECT_NAME) documentation/html
