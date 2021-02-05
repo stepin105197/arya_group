@@ -5,13 +5,12 @@ PROJECT_NAME = Hello
 BUILD = build
 
 # All source code files
-SRC = HelloWorld.c\
+SRC = functions.c\
+src/main.c\
 
 # Project Output name
 #PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME)
 
-# Document files
-DOCUMENTATION_OUTPUT = documentation/html
 
 # Default target built
 $(PROJECT_NAME):all
