@@ -1,22 +1,22 @@
 #include<stdio.h>
-#include "hello.h"
+#include <hello.h>
  void Anagha()
 {
-    printf("I am Anagha");
+    printf("I am Anagha \n");
 
 }
 
 void Pranitha()
 {
-    printf("This is Pranitha");
+    printf("Hi! I am Pranitha \n");
 }
 
 void Fayaz()
 {
-    printf("Iam Fayaz");
+    printf("I am Fayaz \n");
 }
 
 void Karti(){
-    printf("Hi, I'm Karti!");
+    printf("Hi, I'm Karti! \n");
 }
 
